@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+}
+div{
+    background-color: #222222;
+}
+ul.menu {
+    width: 90vw;
+    padding: 1em;
+    margin: 0px;
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+
+a.menu {
+    text-decoration: none;
+    color: #dddddd;
+    margin: 1em;
+}
+
+a.menu:hover {
+    color: #bbbbbb;
+}
