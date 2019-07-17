@@ -1,8 +1,11 @@
+.bg-dark{
+    background: linear-gradient(90deg,#1e2225,#343a40);
+}
 .active:hover {
     text-decoration: none;
 }
 .cover {
-    padding-top: 10%;
+    padding-top: 15%;
 }
 .bg-cover {
     background-image: url("cover.png");
@@ -13,4 +16,16 @@
     font-size: 1.1em;
     margin-top: 2.5%;
     padding: .7rem 1.2rem;
+}
+
+.generovane {
+    display: none;
+}
+
+.part{
+    padding-top: 5%;
+}
+
+.footer {
+    padding-top: 5%;
 }
