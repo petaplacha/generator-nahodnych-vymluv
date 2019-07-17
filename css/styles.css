@@ -30,10 +30,18 @@
     padding-top: 5%;
 }
 
+
 .margin-bottom {
     margin-bottom: 5%;
 }
 
 .margin-top {
     margin-top: 5%;
+}
+h1 {
+    color: #343a40;
+}
+p {
+    color: #343a40;
+
 }
