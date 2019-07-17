@@ -1,0 +1,3 @@
+function generovatVymluvu() {
+    alert ("Ahojky");
+}
