@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
 </head>
 
-<body class="text-center">
+<body class="text-justify">
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom shadow-sm">
         <h5 class="my-0 mr-md-auto font-weight-normal text-white">Generátor náhodných výmluv</h5>
         <nav class="my-2 my-md-0 mr-md-3">
@@ -20,6 +20,24 @@
             <a class="p-2 text-white" href="jak-se-vymlouvat.html">Jak se vymlouvat?</a>
         </nav>
         <a class="btn btn-outline-info active" href="pridat-vymluvu.html">Přidat vlastní výmluvu</a>
+    </div>
+    <div class="container">
+        <h1 class="margin-top">Přidej vlastní výmluvu</h1>
+        <p class="margin-bottom">Snažíme se neustále aktualizovat a rozšiřovat databázi našich ověřených výmluv. Pomoc nám i ty! Vaše návrhy pečlivě projdeme a ty nejpropracovanější zařadíme do našeho seznamu nejlepších výmluv!</p>
+        <form class="text-center">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Jméno/přezdívka</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Arya">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">E-mail</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="arya.stark@example.com">
+                </div>
+            </div>
+            <textarea class="form-control margin-bottom" type="text" placeholder="Tvůj návrh na novou výmluvu"></textarea>
+            <button type="submit" class="btn btn-info">Odeslat výmluvu</button>
+        </form>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
