@@ -64,6 +64,7 @@ p {
 
 .text-sm:hover {
     color: #138496;
+    cursor: pointer;
 }
 
 .btn-gener {
