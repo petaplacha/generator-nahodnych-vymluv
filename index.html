@@ -30,7 +30,7 @@
             <p class="lead">Generátor náhodných výmluv je tady pro tebe. Už se nemusíš bát trapných pozdních příchodů,
                 ani pozdě splněných deadlinů. Vygeneruj si vlastní náhodnou výmluvu, vyřešíme to za tebe!</p>
             <p class="lead">
-                <a onclick="generovatVymluvu();" href="#vymluva" class="btn btn-lg btn-info btn-gener">Generovat
+                <a onclick="generovatVymluvu('vybranyTyp','vybranyCas');" href="#vymluva" class="btn btn-lg btn-info btn-gener">Generovat
                     výmluvu</a>
             </p>
             <p class="lead">
@@ -53,8 +53,8 @@
                         </select>
                     </div>
                     <div class="form-group col-md-6">
-                        <label class="col-sm col-form-label" for="vybranyTyp">Časový&nbsp;úsek&nbsp;výmluvy</label>
-                        <select class="form-control custom-select" id="vybranyTyp">
+                        <label class="col-sm col-form-label" for="vybranyCas">Časový&nbsp;úsek&nbsp;výmluvy</label>
+                        <select class="form-control custom-select" id="vybranyCas">
                             <option selected>Vyber čas...</option>
                             <option value="1">Několik minut</option>
                             <option value="2">Několik hodin až den</option>
@@ -68,7 +68,7 @@
     <div class="container generovane part" id="generovane">
         <h2 id="vymluva"></h2>
         <p class="lead">
-            <a onclick="generovatVymluvu();" class="text-sm">Chci jinou výmluvu ></a>
+            <a onclick="generovatVymluvu('vybranyTyp','vybranyCas');" class="text-sm">Chci jinou výmluvu ></a>
         </p>
         <p class="footer"><b>Naše výmluva se ti nelíbí?</b> Zkus říct pravdu.</p>
     </div>
