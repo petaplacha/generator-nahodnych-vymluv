@@ -25,6 +25,10 @@
     display: none;
 }
 
+.filtr {
+    display: none;
+}
+
 .part{
     padding-top: 5%;
 }
@@ -50,4 +54,26 @@ p {
 
 .h5 {
     font-size: 1.5em;
+}
+
+.text-sm {
+    margin-top: 0em;
+    font-size: .7em;
+    color:#343a40;
+}
+
+.text-sm:hover {
+    color: #138496;
+}
+
+.btn-gener {
+    margin-bottom: 0em;
+}
+
+.part-dark {
+    background: #eeeeee;
+}
+
+.part-filtr {
+    padding: 2.5%;
 }

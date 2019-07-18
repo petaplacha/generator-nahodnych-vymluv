@@ -8,32 +8,68 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <meta charset="utf-8" name="viewport" content= "width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body class="text-center">
     <div class="bg-cover">
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom shadow-sm">
-        <a class="h5 my-0 mr-md-auto font-weight-normal text-white active" href="index.html">Generátor&nbsp;náhodných&nbsp;výmluv</a>
-        <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-white active" href="index.html">Generátor</a>
-            <a class="p-2 text-white" href="o-projektu.html">O&nbsp;projektu</a>
-            <a class="p-2 text-white" href="jak-se-vymlouvat.html">Jak&nbsp;se&nbsp;vymlouvat?</a>
-        </nav>
-        <a class="btn btn-outline-info" href="pridat-vymluvu.html">Přidat&nbsp;vlastní&nbsp;výmluvu</a>
-    </div>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom shadow-sm">
+            <a class="h5 my-0 mr-md-auto font-weight-normal text-white active"
+                href="index.html">Generátor&nbsp;náhodných&nbsp;výmluv</a>
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-white active" href="index.html">Generátor</a>
+                <a class="p-2 text-white" href="o-projektu.html">O&nbsp;projektu</a>
+                <a class="p-2 text-white" href="jak-se-vymlouvat.html">Jak&nbsp;se&nbsp;vymlouvat?</a>
+            </nav>
+            <a class="btn btn-outline-info" href="pridat-vymluvu.html">Přidat&nbsp;vlastní&nbsp;výmluvu</a>
+        </div>
 
-    <main role="main" class="inner cover container">
-        <h1 class="cover-heading">Najdeme ti tu nejlepší výmluvu.</h1>
-        <p class="lead">Generátor náhodných výmluv je tady pro tebe. Už se nemusíš bát trapných pozdních příchodů, ani pozdě splněných deadlinů. Vygeneruj si vlastní náhodnou výmluvu, vyřešíme to za tebe!</p>
-        <p class="lead">
-            <a onclick="generovatVymluvu();" href="#vymluva" class="btn btn-lg btn-info btn-gener">Generovat výmluvu</a>
-        </p>
-    </main>
+        <main role="main" class="inner cover container">
+            <h1 class="cover-heading">Najdeme ti tu nejlepší výmluvu.</h1>
+            <p class="lead">Generátor náhodných výmluv je tady pro tebe. Už se nemusíš bát trapných pozdních příchodů,
+                ani pozdě splněných deadlinů. Vygeneruj si vlastní náhodnou výmluvu, vyřešíme to za tebe!</p>
+            <p class="lead">
+                <a onclick="generovatVymluvu();" href="#vymluva" class="btn btn-lg btn-info btn-gener">Generovat
+                    výmluvu</a>
+            </p>
+            <p class="lead">
+                <a onclick="zobrazitFiltr();" href="#filtr" class="text-sm">Chci konkrétní výmluvu ></a>
+            </p>
+        </main>
+    </div>
+    <div class="part-dark">
+        <div class="container filtr part-filtr" id="filtr">
+            <p class="lead text-left">Řekni nám, co přesně potřebuješ:</p>
+            <form>
+                <div class="form-row align-items-center">
+                    <div class="form-group col-md-6">
+                        <label class="col-sm col-form-label" for="vybranyTyp">Typ&nbsp;výmluvy</label>
+                        <select class="form-control custom-select" id="vybranyTyp">
+                            <option selected>Vyber typ...</option>
+                            <option value="1">Nedodržení termínu (např. pozdní příchod)</option>
+                            <option value="2">Neudělání/pokažení práce</option>
+                            <option value="3">Něco se ti nechce dělat</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="col-sm col-form-label" for="vybranyTyp">Časový&nbsp;úsek&nbsp;výmluvy</label>
+                        <select class="form-control custom-select" id="vybranyTyp">
+                            <option selected>Vyber čas...</option>
+                            <option value="1">Několik minut</option>
+                            <option value="2">Několik hodin až den</option>
+                            <option value="3">Dlouhodobá výmluva</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
     <div class="container generovane part" id="generovane">
         <h2 id="vymluva"></h2>
+        <p class="lead">
+            <a onclick="generovatVymluvu();" class="text-sm">Chci jinou výmluvu ></a>
+        </p>
         <p class="footer"><b>Naše výmluva se ti nelíbí?</b> Zkus říct pravdu.</p>
     </div>
 
