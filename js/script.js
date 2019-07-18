@@ -12,7 +12,7 @@ function generovatVymluvu(typId, casId) {
         cas = Math.floor(Math.random() * 3) + 1;
     }
 
-    
+
     var vymluvyTermMin = [
         'Ujel mi autobus.',
         'Musel jsem se ještě zastavit u babičky.',
@@ -22,7 +22,7 @@ function generovatVymluvu(typId, casId) {
 
     var vymluvyTermHod = [
         'Byl jsem u doktora.',
-        ,];
+    ];
 
     var vymluvyTermRok = [
         'Unesli mě mimozemšťani.',
@@ -57,27 +57,27 @@ function generovatVymluvu(typId, casId) {
 
     switch (typ) {
         case 1:
-                if (1 === cas) {
-                    nejVymluva = vymluvyTermMin[Math.floor(Math.random() * vymluvyTermMin.length)];
-                }
+            if (1 === cas) {
+                nejVymluva = vymluvyTermMin[Math.floor(Math.random() * vymluvyTermMin.length)];
+            }
 
-                if (2 === cas) {
-                    nejVymluva = vymluvyTermHod[Math.floor(Math.random() * vymluvyTermHod.length)];
-                }
+            if (2 === cas) {
+                nejVymluva = vymluvyTermHod[Math.floor(Math.random() * vymluvyTermHod.length)];
+            }
 
-                if (3 === cas) {
-                    nejVymluva = vymluvyTermRok[Math.floor(Math.random() * vymluvyTermRok.length)];
-                }
+            if (3 === cas) {
+                nejVymluva = vymluvyTermRok[Math.floor(Math.random() * vymluvyTermRok.length)];
+            }
             break;
         case 2:
             if (1 === cas) {
                 nejVymluva = vymluvyPraceMin[Math.floor(Math.random() * vymluvyPraceMin.length)];
-            }              
-            
+            }
+
             if (2 === cas) {
                 nejVymluva = vymluvyPraceHod[Math.floor(Math.random() * vymluvyPraceHod.length)];
             }
-            
+
             if (3 === cas) {
                 nejVymluva = vymluvyPraceRok[Math.floor(Math.random() * vymluvyPraceRok.length)];
             }
