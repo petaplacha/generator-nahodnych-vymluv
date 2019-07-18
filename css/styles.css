@@ -8,7 +8,10 @@
     padding-top: 15%;
 }
 .bg-cover {
-    background-image: url("cover.png");
+    background-image: url("../img/cover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -43,5 +46,8 @@ h1 {
 }
 p {
     color: #343a40;
+}
 
+.h5 {
+    font-size: 1.5em;
 }
