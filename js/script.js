@@ -19,3 +19,8 @@ function generovatVymluvu() {
     element.classList.remove("generovane");
     document.getElementById("vymluva").innerHTML = rand;
 }
+
+function zobrazitFiltr() {
+    var element = document.getElementById("filtr");
+    element.classList.remove("filtr");
+}
