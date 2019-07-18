@@ -77,3 +77,11 @@ p {
 .part-filtr {
     padding: 2.5%;
 }
+
+.paticka {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
